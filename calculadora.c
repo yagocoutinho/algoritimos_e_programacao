@@ -5,13 +5,38 @@ int main(){// o "int" usa 4 bytes que representa 4 bilhões de numeros
       int numero1;
       int numero2; 
       int resultado;
+      char operacao;
+
+      printf("insira uma operacao:\n");
+      scanf("%c", &operacao);
 
 
-    numero1 = 34;
-    numero2 = 2;
+      printf("insira dois numeros:\n");
+      scanf("%d", &numero1);
+      scanf("%d", &numero2);
 
-    resultado = numero1 * numero2;
-    printf("Resultado: %d\n", resultado);// "%d" representa que é um número inteiro
+      printf("operacao: %c\n", operacao);
+
+
+      if(operacao == '+'){// "==" é pra checar se um valor é igual ao outro
+        printf("Resultado: %d\n", numero1 + numero2);
+
+      } else if(operacao == '-'){
+        printf("Resultado: %d\n", numero1 - numero2);
+
+      } else if(operacao == '/'){
+        printf("Resultado: %d\n", numero1 / numero2);
+
+      }else if(operacao == '*'){
+        printf("Resultado: %d\n", numero1 * numero2);
+
+      }else if(operacao == '%'){
+        printf("Resultado: %d\n", numero1 % numero2);
+      }else{
+        printf("oepracao invalida\n");
+      }
+
+
 
 
     return 0;
