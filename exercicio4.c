@@ -5,9 +5,6 @@ int main() {
     double salario;
 
 
-        printf("insira o nivel do funcionário: ");
-        printf("insira o salario do funcionário: ");
-
     
     scanf(" %c", &nivel);  
     scanf("%lf", &salario);
@@ -29,7 +26,7 @@ int main() {
             aumento = salario * 0.08;
             break;
         default:
-            printf("Nível de experiência inválido.\n");
+            printf("Nível de experiencia invalido.\n");
             return 1; 
     }
 

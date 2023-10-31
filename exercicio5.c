@@ -10,7 +10,7 @@ int main() {
     if (A == B) {
         printf("Os valores lidos sao iguais\n");
     } else {
-        if (A > B) {
+        if (A > B) {   
             printf("%d eh maior que %d\n", A, B);
             if (A % B == 0) {
                 printf("%d eh multiplo de %d\n", A, B);
