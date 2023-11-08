@@ -1,0 +1,41 @@
+QUESTÃO 1
+
+
+
+
+#include <stdio.h>
+
+int main(){
+    int numero = 10;
+    int valor[10];
+    int conjunto_atual[10];
+    for (int i = 0; i < numero; i++) {
+        scanf("%d", &valor[i]);
+    }
+    while (numero > 1)
+    {
+         for (int i = 0; i < numero; i++) {
+            printf("%d", valor[i]);
+            
+            if (i < numero - 1) {
+                printf(" ");
+             }
+         }
+         printf("\n");
+         for (int i = 0; i < numero - 1; i++)
+         {
+            conjunto_atual[i] = valor[i] + valor[i+1];
+         }
+         numero--;
+         for (int i = 0; i < numero; i++)
+         {
+            valor[i] = conjunto_atual[i];
+         }
+         
+    }
+    printf("%d\n", valor[0]);
+    
+
+
+    return 0;
+}
